@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alex Morgan — Full Stack Developer, UI/UX Designer & Creative Coder. Explore my portfolio of web applications, AI projects, and creative work.">
+  <meta name="keywords" content="portfolio, web developer, full stack, UI/UX designer, creative coder">
+  <meta name="author" content="Alex Morgan">
+  <title>Alex Morgan — Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Floating Navigation -->
+  <nav class="nav-floating" id="nav-floating" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo">AM</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link" data-section="about">About</a>
+      <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+      <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+      <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+      <a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    </div>
+    <a href="admin.html" class="nav-admin-link">⚙ Admin</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero-section" id="hero">
+    <div id="particles-js"></div>
+    <div class="hero-glow hero-glow--primary"></div>
+    <div class="hero-glow hero-glow--secondary"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name" id="heroName">Alex Morgan</h1>
+      <div class="hero-typed-wrapper">
+        <span id="typed-text"></span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="heroCtaPrimary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary" id="heroCtaSecondary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT SECTION ============ -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Get to know me, my journey, and what drives me to create amazing digital experiences.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrapper reveal-left">
+          <div class="about-avatar-glow"></div>
+          <div class="about-avatar glass-card" id="aboutAvatar" style="display:flex;align-items:center;justify-content:center;font-size:5rem;">
+            👨‍💻
+          </div>
+        </div>
+        <div class="about-text reveal-right">
+          <h2>Crafting <span class="gradient-text">Digital Experiences</span></h2>
+          <p class="about-bio" id="aboutBio">Loading bio...</p>
+          <div class="about-stats" id="aboutStats">
+            <!-- Stats injected by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS SECTION ============ -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">Technologies and tools I use to bring ideas to life.</p>
+      </div>
+      <div class="skills-filter reveal" id="skillsFilter">
+        <!-- Filter buttons injected by JS -->
+      </div>
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Skill items injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS SECTION ============ -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">A selection of my recent work — from web apps to creative experiments.</p>
+      </div>
+      <div class="skills-filter reveal" id="projectsFilter">
+        <!-- Filter buttons injected by JS -->
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Project cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE SECTION ============ -->
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+        <p class="section-subtitle">A timeline of my professional experience and education.</p>
+      </div>
+      <div class="timeline" id="timeline">
+        <!-- Timeline items injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS SECTION ============ -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">What People <span class="gradient-text">Say</span></h2>
+        <p class="section-subtitle">Feedback from clients and colleagues I've had the pleasure of working with.</p>
+      </div>
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <!-- Testimonial cards injected by JS -->
+      </div>
+      <div class="testimonials-nav" id="testimonialsNav">
+        <button id="testimonialPrev" aria-label="Previous testimonial">←</button>
+        <button id="testimonialNext" aria-label="Next testimonial">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Have a project in mind? Let's work together to create something amazing.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Let's Talk</h3>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of something great.</p>
+          <div class="contact-details" id="contactDetails">
+            <!-- Contact items injected by JS -->
+          </div>
+          <div class="social-links" id="socialLinks">
+            <!-- Social links injected by JS -->
+          </div>
+        </div>
+        <div class="contact-form glass-card reveal-right">
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Your Email</label>
+              <input type="email" id="contactEmail" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" placeholder="Project Inquiry">
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="contactSubmitBtn">
+              Send Message ✉
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-text" id="footerText">
+        © 2026 <span class="gradient-text" id="footerName">Alex Morgan</span>. Made with <span class="heart">♥</span> and a lot of ☕
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="js/dataStore.js"></script>
+  <script src="js/particles-config.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
